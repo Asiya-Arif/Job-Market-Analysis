@@ -1,4 +1,4 @@
-# Job-Market-Analysis
+# Job Market Analysis
 
 This project analyzes global job market trends using a dataset that includes roles, salaries, locations, experience levels, and employment types. The aim is to uncover insights into how factors like experience, education, and location influence salaries.
 
