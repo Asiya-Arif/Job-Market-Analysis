@@ -120,4 +120,38 @@ ORDER BY postings DESC;
 SELECT years_experience, ROUND(AVG(salary_usd), 2) AS avg_salary, COUNT(*) AS postings
 FROM ai_job_dataset1
 GROUP BY years_experience
+ORDER BY years_experience;
 
+-- Most common skill combinations (top 10)
+SELECT required_skills, COUNT(*) AS postings
+FROM ai_job_dataset1
+GROUP BY required_skills
+ORDER BY postings DESC
+LIMIT 10;
+
+-- ===============================
+-- 8. Time Trends
+-- ===============================
+-- Jobs posted per month
+SELECT DATE_FORMAT(posted_date, '%Y-%m') AS month, COUNT(*) AS postings
+FROM ai_job_dataset1
+GROUP BY month
+ORDER BY month;
+
+-- Average days between posting and deadline
+SELECT AVG(DATEDIFF(application_deadline, posted_date)) AS avg_days_open
+FROM ai_job_dataset1;
+
+-- ===============================
+-- 9. Benefits & Job Descriptions
+-- ===============================
+-- Average benefits score by company size
+SELECT company_size, ROUND(AVG(benefits_score), 2) AS avg_benefits
+FROM ai_job_dataset1
+GROUP BY company_size
+ORDER BY avg_benefits DESC;
+
+-- Does job description length correlate with salary?
+SELECT ROUND(AVG(job_description_length), 0) AS avg_desc_length,
+       ROUND(AVG(salary_usd), 2) AS avg_salary
+FROM ai_job_dataset1;
