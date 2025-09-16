@@ -1,28 +1,23 @@
-# Job Market Analysis
+# 🌍 Job Market Analysis
+This project analyzes global job market trends using a dataset that includes roles, salaries, locations, experience levels, and employment types.  
+The aim is to uncover insights into how factors like experience, education, and location influence salaries.
 
-This project analyzes global job market trends using a dataset that includes roles, salaries, locations, experience levels, and employment types. The aim is to uncover insights into how factors like experience, education, and location influence salaries.
-
-# 📊 Key Analyses
-
-- Years of Experience vs. Salary
-- Top Paying Countries
-- Education Level and Salary Correlation
-- Experience Level and Employment Type Salary Breakdown
-- Salary Distributions across Roles
-- Remote vs Hybrid vs Onsite Jobs by Country
+## 📊 Key Analyses (Python)
+- **Years of Experience vs. Salary**  
+- **Top Paying Countries**  
+- **Education Level and Salary Correlation**  
+- **Experience Level and Employment Type Salary Breakdown**  
+- **Salary Distributions across Roles**  
+- **Remote vs Hybrid vs Onsite Jobs by Country**
 
 # 🔍Insights Extracted
-
-- Senior and executive roles have significantly higher average salaries.
-- Full-time employment tends to dominate high-paying roles.
-- The United States consistently ranks among the top-paying locations.
-- Education level has a noticeable impact on salary in higher experience tiers.
+- Senior and executive roles have significantly higher average salaries.  
+- Full-time employment tends to dominate high-paying roles.  
+- The United States consistently ranks among the top-paying locations.  
+- Education level has a noticeable impact on salary in higher experience tiers.  
 - Countries like Switzerland and Canada have a notably higher number of remote-friendly jobs.
 
   
-# 🛠️ Tools & Libraries
-
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
+## 🛠️ Tools & Libraries
+- Python: `pandas`, `matplotlib`, `seaborn`  
+- SQL: MySQL (Workbench / CLI)
